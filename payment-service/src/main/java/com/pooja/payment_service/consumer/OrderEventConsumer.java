@@ -43,7 +43,7 @@ private final PaymentService PaymentService;
     @KafkaListener(topics =KafkaTopics.ORDER_CREATED+"-dlt",groupId = "payment-group")
     public void consumeDLQOrderCreatedEvent(OrderCreatedEvent event){
 
-    
+
         //Log the failure
         //
         //Store failed events for debugging

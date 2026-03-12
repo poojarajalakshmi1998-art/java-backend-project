@@ -15,7 +15,7 @@ public class RefreshTokenService {
 
     private final RefreshTokenRepository refreshTokenRepository;
     private final UserRepository userRepository;
-private static final long RefreshTokenDuration= 7 * 24 * 60 * 60 * 60 * 1000;
+private static final long RefreshTokenDuration= 7 * 24 * 60 * 60 * 1000;
     public RefreshTokenService(RefreshTokenRepository refreshTokenRepository, UserRepository userRepository) {
 
         this.refreshTokenRepository = refreshTokenRepository;
