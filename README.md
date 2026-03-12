@@ -37,17 +37,6 @@ The system consists of multiple microservices communicating through **Kafka even
 This architecture ensures **services remain loosely coupled and independently scalable**.
 
 ---
-Client
-   |
-API Gateway (JWT Authentication)
-   |
-------------------------------------------
-|        |         |                     |
-Auth     Order     Payment               Notification
-Service  Service   Service               Service
-   |                  |
-   |                  |
-   ------ Kafka Event Bus ------
 
 ## Microservices
 
