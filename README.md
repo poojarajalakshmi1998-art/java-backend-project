@@ -15,7 +15,7 @@ Key architectural concepts demonstrated:
 * Asynchronous Processing with Kafka
 * Distributed System Design
 * Fault Tolerance with Retry & Dead Letter Topics
-* API Gateway and Centralized Authentication (planned)
+* API Gateway and Centralized Authentication
 
 ---
 
@@ -37,6 +37,17 @@ The system consists of multiple microservices communicating through **Kafka even
 This architecture ensures **services remain loosely coupled and independently scalable**.
 
 ---
+Client
+   |
+API Gateway (JWT Authentication)
+   |
+------------------------------------------
+|        |         |                     |
+Auth     Order     Payment               Notification
+Service  Service   Service               Service
+   |                  |
+   |                  |
+   ------ Kafka Event Bus ------
 
 ## Microservices
 
@@ -182,17 +193,41 @@ Each service:
 ```
 microservices-project
 │
+├── api-gateway
+│   ├── config
+│   │     └── SecurityConfig.java
+│   │
+│   ├── filter
+│   │     └── JwtAuthenticationFilter.java
+│   │
+│   ├── util
+│   │     └── JwtUtil.java
+│   │
+│   ├── application.yml
+│   │
+│   └── ApiGatewayApplication.java
+│
+├── auth-service
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── entity
+│   ├── security
+│   │     ├── JwtUtil.java
+│   │     └── SecurityConfig.java
+│   └── AuthServiceApplication.java
+│
 ├── order-service
 │   ├── controller
 │   ├── service
 │   ├── repository
 │   ├── entity
-│   └── kafka producer
+│   └── kafka-producer
 │
 ├── payment-service
 │   ├── consumer
 │   ├── service
-│   └── kafka producer
+│   └── kafka-producer
 │
 ├── notification-service
 │   ├── consumer
@@ -250,8 +285,6 @@ mvn spring-boot:run
 
 Planned improvements for the system:
 
-* Spring Security with JWT Authentication
-* API Gateway using Spring Cloud Gateway
 * Distributed tracing with Zipkin
 * Centralized logging
 * Kubernetes deployment
