@@ -1,58 +1,86 @@
-2026-03-08T08:50:59.055+05:30  INFO 25644 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 25644 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T08:50:59.070+05:30  INFO 25644 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T08:51:00.846+05:30  INFO 25644 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T08:51:01.010+05:30  INFO 25644 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
-2026-03-08T08:51:03.274+05:30  INFO 25644 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T08:51:03.307+05:30  INFO 25644 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T08:51:03.308+05:30  INFO 25644 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T08:51:03.515+05:30  INFO 25644 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T08:51:03.516+05:30  INFO 25644 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4367 ms
-2026-03-08T08:51:04.332+05:30  INFO 25644 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T08:51:04.554+05:30  INFO 25644 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T08:51:04.686+05:30  INFO 25644 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T08:51:05.498+05:30  INFO 25644 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T08:51:05.595+05:30  INFO 25644 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T08:51:06.088+05:30  INFO 25644 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@669580e2
-2026-03-08T08:51:06.107+05:30  INFO 25644 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T08:51:09.543+05:30  INFO 25644 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T08:51:09.847+05:30  INFO 25644 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T08:51:11.470+05:30  WARN 25644 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T08:51:14.003+05:30  INFO 25644 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T08:51:14.256+05:30  INFO 25644 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T08:51:14.291+05:30  INFO 25644 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 16.012 seconds (process running for 17.235)
-2026-03-08T08:51:15.108+05:30  INFO 25644 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T08:51:15.109+05:30  INFO 25644 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T08:51:15.114+05:30  INFO 25644 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-03-08T08:53:44.769+05:30  INFO 25644 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T08:53:44.774+05:30  INFO 25644 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T08:53:44.791+05:30  INFO 25644 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T09:08:23.605+05:30  INFO 47616 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 47616 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T09:08:23.609+05:30  INFO 47616 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T09:08:25.296+05:30  INFO 47616 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T09:08:25.388+05:30  INFO 47616 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
-2026-03-08T09:08:26.704+05:30  INFO 47616 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T09:08:26.721+05:30  INFO 47616 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T09:08:26.722+05:30  INFO 47616 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T09:08:26.828+05:30  INFO 47616 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T09:08:26.829+05:30  INFO 47616 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3147 ms
-2026-03-08T09:08:27.258+05:30  INFO 47616 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T09:08:27.370+05:30  INFO 47616 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T09:08:27.438+05:30  INFO 47616 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T09:08:27.973+05:30  INFO 47616 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T09:08:28.021+05:30  INFO 47616 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T09:08:28.265+05:30  INFO 47616 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cfa2ac5
-2026-03-08T09:08:28.268+05:30  INFO 47616 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T09:08:29.994+05:30  INFO 47616 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T09:08:30.095+05:30  INFO 47616 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T09:08:31.012+05:30  WARN 47616 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T09:08:32.347+05:30  INFO 47616 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T09:08:32.514+05:30  INFO 47616 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T09:08:32.567+05:30  INFO 47616 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.789 seconds (process running for 11.108)
-2026-03-08T09:08:32.900+05:30  INFO 47616 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T09:08:32.902+05:30  INFO 47616 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T09:08:32.904+05:30  INFO 47616 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-03-08T09:08:39.453+05:30 DEBUG 47616 --- [order-service] [http-nio-8081-exec-2] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T09:08:39.611+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2026-03-12T11:16:16.158+05:30  INFO 26384 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 26384 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
+2026-03-12T11:16:16.173+05:30  INFO 26384 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T11:16:17.906+05:30  INFO 26384 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12T11:16:17.994+05:30  INFO 26384 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2026-03-12T11:16:19.194+05:30  INFO 26384 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-12T11:16:19.218+05:30  INFO 26384 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T11:16:19.219+05:30  INFO 26384 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-12T11:16:19.350+05:30  INFO 26384 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-12T11:16:19.351+05:30  INFO 26384 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3085 ms
+2026-03-12T11:16:19.888+05:30  INFO 26384 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12T11:16:20.017+05:30  INFO 26384 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-12T11:16:20.082+05:30  INFO 26384 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-12T11:16:20.488+05:30  INFO 26384 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12T11:16:20.550+05:30  INFO 26384 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T11:16:20.786+05:30  INFO 26384 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@294ebe11
+2026-03-12T11:16:20.788+05:30  INFO 26384 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T11:16:22.495+05:30  INFO 26384 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12T11:16:22.678+05:30  INFO 26384 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:16:23.488+05:30  WARN 26384 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12T11:16:24.924+05:30  INFO 26384 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-12T11:16:25.081+05:30  INFO 26384 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-12T11:16:25.106+05:30  INFO 26384 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.811 seconds (process running for 10.795)
+2026-03-12T11:16:25.859+05:30  INFO 26384 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12T11:16:25.860+05:30  INFO 26384 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-12T11:16:25.863+05:30  INFO 26384 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-12T11:17:08.296+05:30  INFO 26384 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:17:08.301+05:30  INFO 26384 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-12T11:17:08.326+05:30  INFO 26384 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-12T11:18:42.207+05:30  INFO 17460 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 17460 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
+2026-03-12T11:18:42.211+05:30  INFO 17460 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T11:18:43.826+05:30  INFO 17460 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12T11:18:43.928+05:30  INFO 17460 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2026-03-12T11:18:45.044+05:30  INFO 17460 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-12T11:18:45.062+05:30  INFO 17460 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T11:18:45.063+05:30  INFO 17460 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-12T11:18:45.161+05:30  INFO 17460 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-12T11:18:45.161+05:30  INFO 17460 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2883 ms
+2026-03-12T11:18:45.614+05:30  INFO 17460 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12T11:18:45.724+05:30  INFO 17460 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-12T11:18:45.775+05:30  INFO 17460 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-12T11:18:46.172+05:30  INFO 17460 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12T11:18:46.239+05:30  INFO 17460 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T11:18:46.479+05:30  INFO 17460 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@686e7513
+2026-03-12T11:18:46.481+05:30  INFO 17460 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T11:18:48.038+05:30  INFO 17460 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12T11:18:48.118+05:30  INFO 17460 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:18:48.973+05:30  WARN 17460 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12T11:18:50.299+05:30  INFO 17460 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-12T11:18:50.424+05:30  INFO 17460 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-12T11:18:50.440+05:30  INFO 17460 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.013 seconds (process running for 10.133)
+2026-03-12T11:18:50.722+05:30  INFO 17460 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12T11:18:50.723+05:30  INFO 17460 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-12T11:18:50.728+05:30  INFO 17460 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-12T11:20:53.693+05:30  INFO 17460 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:20:53.700+05:30  INFO 17460 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-12T11:20:53.716+05:30  INFO 17460 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-12T11:22:31.031+05:30  INFO 9268 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 9268 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
+2026-03-12T11:22:31.034+05:30  INFO 9268 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T11:22:32.758+05:30  INFO 9268 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12T11:22:32.827+05:30  INFO 9268 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2026-03-12T11:22:34.113+05:30  INFO 9268 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-12T11:22:34.132+05:30  INFO 9268 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T11:22:34.133+05:30  INFO 9268 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-12T11:22:34.288+05:30  INFO 9268 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-12T11:22:34.289+05:30  INFO 9268 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3169 ms
+2026-03-12T11:22:34.814+05:30  INFO 9268 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12T11:22:34.914+05:30  INFO 9268 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-12T11:22:34.989+05:30  INFO 9268 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-12T11:22:35.402+05:30  INFO 9268 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12T11:22:35.461+05:30  INFO 9268 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T11:22:35.719+05:30  INFO 9268 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c0cf193
+2026-03-12T11:22:35.723+05:30  INFO 9268 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T11:22:37.502+05:30  INFO 9268 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12T11:22:37.592+05:30  INFO 9268 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:22:38.423+05:30  WARN 9268 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12T11:22:40.193+05:30  INFO 9268 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-12T11:22:40.431+05:30  INFO 9268 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-12T11:22:40.469+05:30  INFO 9268 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 10.166 seconds (process running for 11.081)
+2026-03-12T11:22:41.074+05:30  INFO 9268 --- [order-service] [RMI TCP Connection(4)-192.168.1.6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12T11:22:41.075+05:30  INFO 9268 --- [order-service] [RMI TCP Connection(4)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-12T11:22:41.079+05:30  INFO 9268 --- [order-service] [RMI TCP Connection(4)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-03-12T11:43:06.930+05:30 DEBUG 9268 --- [order-service] [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
+2026-03-12T11:43:07.063+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -142,107 +170,49 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2026-03-08T09:08:39.725+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T09:08:39.850+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T09:08:39.851+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T09:08:39.851+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772941119846
-2026-03-08T09:08:40.991+05:30  INFO 47616 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: bn9P2OvST56fhNXL6vm9oA
-2026-03-08T09:08:41.037+05:30  INFO 47616 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2026-03-08T09:08:41.047+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-2] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : One plus pro
-2026-03-08T09:12:18.843+05:30 DEBUG 47616 --- [order-service] [http-nio-8081-exec-6] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T09:12:18.854+05:30  INFO 47616 --- [order-service] [http-nio-8081-exec-6] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Nokia
-2026-03-08T09:17:41.057+05:30  INFO 47616 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T09:28:41.902+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T09:28:41.907+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T09:28:41.908+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T09:28:41.908+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T09:28:41.908+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T09:28:41.915+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T09:28:41.917+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T09:28:41.920+05:30  INFO 47616 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T09:58:36.688+05:30  INFO 53932 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 53932 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T09:58:36.691+05:30  INFO 53932 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T09:58:38.273+05:30  INFO 53932 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T09:58:38.345+05:30  INFO 53932 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
-2026-03-08T09:58:39.433+05:30  INFO 53932 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T09:58:39.454+05:30  INFO 53932 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T09:58:39.454+05:30  INFO 53932 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T09:58:39.588+05:30  INFO 53932 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T09:58:39.589+05:30  INFO 53932 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2835 ms
-2026-03-08T09:58:40.139+05:30  INFO 53932 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T09:58:40.241+05:30  INFO 53932 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T09:58:40.299+05:30  INFO 53932 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T09:58:40.710+05:30  INFO 53932 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T09:58:40.766+05:30  INFO 53932 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T09:58:41.050+05:30  INFO 53932 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a29fe2e
-2026-03-08T09:58:41.053+05:30  INFO 53932 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T09:58:42.804+05:30  INFO 53932 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T09:58:42.895+05:30  INFO 53932 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T09:58:43.722+05:30  WARN 53932 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T09:58:45.163+05:30  INFO 53932 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T09:58:45.313+05:30  INFO 53932 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T09:58:45.333+05:30  INFO 53932 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.309 seconds (process running for 10.388)
-2026-03-08T09:58:45.869+05:30  INFO 53932 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T09:58:45.869+05:30  INFO 53932 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T09:58:45.872+05:30  INFO 53932 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-03-08T10:06:26.437+05:30  INFO 53932 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:06:26.440+05:30  INFO 53932 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T10:06:26.443+05:30  INFO 53932 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T10:08:30.466+05:30  INFO 30316 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 30316 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T10:08:30.468+05:30  INFO 30316 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T10:08:32.010+05:30  INFO 30316 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T10:08:32.081+05:30  INFO 30316 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
-2026-03-08T10:08:33.158+05:30  INFO 30316 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T10:08:33.176+05:30  INFO 30316 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T10:08:33.176+05:30  INFO 30316 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T10:08:33.270+05:30  INFO 30316 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T10:08:33.272+05:30  INFO 30316 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2734 ms
-2026-03-08T10:08:33.748+05:30  INFO 30316 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T10:08:33.853+05:30  INFO 30316 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T10:08:33.925+05:30  INFO 30316 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T10:08:34.356+05:30  INFO 30316 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T10:08:34.390+05:30  INFO 30316 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T10:08:34.640+05:30  INFO 30316 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@141dfcf9
-2026-03-08T10:08:34.643+05:30  INFO 30316 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T10:08:36.094+05:30  INFO 30316 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T10:08:36.174+05:30  INFO 30316 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:08:37.073+05:30  WARN 30316 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T10:08:38.362+05:30  INFO 30316 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T10:08:38.506+05:30  INFO 30316 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T10:08:38.527+05:30  INFO 30316 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 8.75 seconds (process running for 9.864)
-2026-03-08T10:08:38.799+05:30  INFO 30316 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T10:08:38.800+05:30  INFO 30316 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T10:08:38.804+05:30  INFO 30316 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-03-08T10:17:55.199+05:30  INFO 30316 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:17:55.202+05:30  INFO 30316 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T10:17:55.206+05:30  INFO 30316 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T10:26:39.097+05:30  INFO 55368 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 55368 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T10:26:39.100+05:30  INFO 55368 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T10:26:40.613+05:30  INFO 55368 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T10:26:40.734+05:30  INFO 55368 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
-2026-03-08T10:26:41.797+05:30  INFO 55368 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T10:26:41.813+05:30  INFO 55368 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T10:26:41.813+05:30  INFO 55368 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T10:26:41.906+05:30  INFO 55368 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T10:26:41.906+05:30  INFO 55368 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2736 ms
-2026-03-08T10:26:42.295+05:30  INFO 55368 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T10:26:42.366+05:30  INFO 55368 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T10:26:42.409+05:30  INFO 55368 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T10:26:42.805+05:30  INFO 55368 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T10:26:42.842+05:30  INFO 55368 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T10:26:43.083+05:30  INFO 55368 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fea9a7b
-2026-03-08T10:26:43.085+05:30  INFO 55368 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T10:26:44.436+05:30  INFO 55368 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T10:26:44.505+05:30  INFO 55368 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:26:45.169+05:30  WARN 55368 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T10:26:46.376+05:30  INFO 55368 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T10:26:46.498+05:30  INFO 55368 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T10:26:46.520+05:30  INFO 55368 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 8.131 seconds (process running for 9.047)
-2026-03-08T10:26:46.947+05:30  INFO 55368 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T10:26:46.947+05:30  INFO 55368 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T10:26:46.951+05:30  INFO 55368 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-03-08T10:27:37.873+05:30 DEBUG 55368 --- [order-service] [http-nio-8081-exec-4] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T10:27:38.041+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2026-03-12T11:43:07.132+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2026-03-12T11:43:07.263+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-03-12T11:43:07.264+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-03-12T11:43:07.265+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1773295987259
+2026-03-12T11:43:08.171+05:30  INFO 9268 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: DmOpNCzQREyQyxZAd1qtBQ
+2026-03-12T11:43:08.221+05:30  INFO 9268 --- [order-service] [http-nio-8081-exec-1] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Mouse
+2026-03-12T11:43:08.247+05:30  INFO 9268 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2026-03-12T11:52:08.353+05:30  INFO 9268 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2026-03-12T11:58:26.638+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-03-12T11:58:26.646+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-03-12T11:58:26.646+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-03-12T11:58:26.646+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-03-12T11:58:26.647+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2026-03-12T11:58:26.661+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T11:58:26.669+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-12T11:58:26.672+05:30  INFO 9268 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-12T12:07:41.318+05:30  INFO 23420 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 23420 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
+2026-03-12T12:07:41.322+05:30  INFO 23420 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T12:07:42.994+05:30  INFO 23420 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12T12:07:43.072+05:30  INFO 23420 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2026-03-12T12:07:44.373+05:30  INFO 23420 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-12T12:07:44.428+05:30  INFO 23420 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T12:07:44.516+05:30  INFO 23420 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-12T12:07:45.777+05:30  INFO 23420 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-12T12:07:45.778+05:30  INFO 23420 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4384 ms
+2026-03-12T12:07:46.494+05:30  INFO 23420 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12T12:07:46.656+05:30  INFO 23420 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-12T12:07:46.772+05:30  INFO 23420 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-12T12:07:47.489+05:30  INFO 23420 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12T12:07:47.574+05:30  INFO 23420 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T12:07:48.012+05:30  INFO 23420 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a751535
+2026-03-12T12:07:48.017+05:30  INFO 23420 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T12:07:50.428+05:30  INFO 23420 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12T12:07:50.974+05:30  INFO 23420 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T12:07:52.815+05:30  WARN 23420 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12T12:07:55.347+05:30  INFO 23420 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-12T12:07:55.619+05:30  INFO 23420 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-12T12:07:55.679+05:30  INFO 23420 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 15.136 seconds (process running for 16.108)
+2026-03-12T12:07:56.509+05:30  INFO 23420 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-12T12:07:56.514+05:30  INFO 23420 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-12T12:07:56.517+05:30  INFO 23420 --- [order-service] [RMI TCP Connection(2)-192.168.1.6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-12T12:17:14.988+05:30 DEBUG 23420 --- [order-service] [http-nio-8081-exec-7] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
+2026-03-12T12:17:15.115+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -332,797 +302,18 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2026-03-08T10:27:38.132+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T10:27:38.262+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T10:27:38.262+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T10:27:38.263+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772945858257
-2026-03-08T10:27:39.330+05:30  INFO 55368 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: Ky1J-oE1TsW3IDhSWArTYg
-2026-03-08T10:27:39.349+05:30  INFO 55368 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2026-03-08T10:27:39.381+05:30  INFO 55368 --- [order-service] [http-nio-8081-exec-4] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Oppo
-2026-03-08T10:32:26.295+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T10:32:26.303+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T10:32:26.303+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T10:32:26.303+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T10:32:26.304+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T10:32:26.312+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:32:26.316+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T10:32:26.319+05:30  INFO 55368 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T10:32:38.626+05:30  INFO 42740 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 42740 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T10:32:38.629+05:30  INFO 42740 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T10:32:40.116+05:30  INFO 42740 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T10:32:40.177+05:30  INFO 42740 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
-2026-03-08T10:32:41.338+05:30  INFO 42740 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T10:32:41.354+05:30  INFO 42740 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T10:32:41.355+05:30  INFO 42740 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T10:32:41.446+05:30  INFO 42740 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T10:32:41.446+05:30  INFO 42740 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2746 ms
-2026-03-08T10:32:41.857+05:30  INFO 42740 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T10:32:41.925+05:30  INFO 42740 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T10:32:41.967+05:30  INFO 42740 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T10:32:42.313+05:30  INFO 42740 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T10:32:42.349+05:30  INFO 42740 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T10:32:42.585+05:30  INFO 42740 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e67a8c0
-2026-03-08T10:32:42.588+05:30  INFO 42740 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T10:32:44.083+05:30  INFO 42740 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T10:32:44.158+05:30  INFO 42740 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:32:44.821+05:30  WARN 42740 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T10:32:46.000+05:30  INFO 42740 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T10:32:46.112+05:30  INFO 42740 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T10:32:46.128+05:30  INFO 42740 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 8.265 seconds (process running for 9.267)
-2026-03-08T10:32:46.351+05:30  INFO 42740 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T10:32:46.352+05:30  INFO 42740 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T10:32:46.359+05:30  INFO 42740 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-03-08T10:33:29.600+05:30 DEBUG 42740 --- [order-service] [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T10:33:29.729+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2026-03-08T10:33:29.796+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T10:33:29.897+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T10:33:29.897+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T10:33:29.899+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772946209894
-2026-03-08T10:33:30.704+05:30  INFO 42740 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: Ky1J-oE1TsW3IDhSWArTYg
-2026-03-08T10:33:30.707+05:30  INFO 42740 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2 with epoch 0
-2026-03-08T10:33:30.747+05:30  INFO 42740 --- [order-service] [http-nio-8081-exec-1] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : VIVO
-2026-03-08T10:36:27.053+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T10:36:27.060+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T10:36:27.060+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T10:36:27.060+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T10:36:27.061+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T10:36:27.069+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:36:27.072+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T10:36:27.078+05:30  INFO 42740 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T10:41:24.428+05:30  INFO 3892 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 3892 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T10:41:24.431+05:30  INFO 3892 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T10:41:25.877+05:30  INFO 3892 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T10:41:25.956+05:30  INFO 3892 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
-2026-03-08T10:41:27.014+05:30  INFO 3892 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T10:41:27.028+05:30  INFO 3892 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T10:41:27.030+05:30  INFO 3892 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T10:41:27.129+05:30  INFO 3892 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T10:41:27.129+05:30  INFO 3892 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2628 ms
-2026-03-08T10:41:27.534+05:30  INFO 3892 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T10:41:27.641+05:30  INFO 3892 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T10:41:27.681+05:30  INFO 3892 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T10:41:28.009+05:30  INFO 3892 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T10:41:28.045+05:30  INFO 3892 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T10:41:28.282+05:30  INFO 3892 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30c03473
-2026-03-08T10:41:28.286+05:30  INFO 3892 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T10:41:29.685+05:30  INFO 3892 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T10:41:29.764+05:30  INFO 3892 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:41:30.439+05:30  WARN 3892 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T10:41:31.766+05:30  INFO 3892 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T10:41:31.927+05:30  INFO 3892 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T10:41:31.944+05:30  INFO 3892 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 8.232 seconds (process running for 9.211)
-2026-03-08T10:41:32.236+05:30  INFO 3892 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T10:41:32.236+05:30  INFO 3892 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T10:41:32.239+05:30  INFO 3892 --- [order-service] [RMI TCP Connection(2)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-03-08T10:42:17.065+05:30 DEBUG 3892 --- [order-service] [http-nio-8081-exec-2] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T10:42:17.181+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2026-03-08T10:42:17.248+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T10:42:17.378+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T10:42:17.378+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T10:42:17.380+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772946737375
-2026-03-08T10:42:18.378+05:30  INFO 3892 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: Ky1J-oE1TsW3IDhSWArTYg
-2026-03-08T10:42:18.381+05:30  INFO 3892 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 4 with epoch 0
-2026-03-08T10:42:18.428+05:30  INFO 3892 --- [order-service] [http-nio-8081-exec-2] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Fridge
-2026-03-08T10:44:50.132+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T10:44:50.139+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T10:44:50.139+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T10:44:50.140+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T10:44:50.140+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T10:44:50.147+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T10:44:50.149+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T10:44:50.153+05:30  INFO 3892 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T12:04:56.971+05:30  INFO 56696 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 56696 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T12:04:56.974+05:30  INFO 56696 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T12:04:58.153+05:30  INFO 56696 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T12:04:58.399+05:30  INFO 56696 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 238 ms. Found 1 JPA repository interface.
-2026-03-08T12:05:01.884+05:30  INFO 56696 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T12:05:01.907+05:30  INFO 56696 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T12:05:01.908+05:30  INFO 56696 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T12:05:02.073+05:30  INFO 56696 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T12:05:02.074+05:30  INFO 56696 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5028 ms
-2026-03-08T12:05:02.694+05:30  INFO 56696 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T12:05:02.830+05:30  INFO 56696 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T12:05:02.925+05:30  INFO 56696 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T12:05:03.446+05:30  INFO 56696 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T12:05:03.540+05:30  INFO 56696 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T12:05:03.872+05:30  INFO 56696 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fea9a7b
-2026-03-08T12:05:03.875+05:30  INFO 56696 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T12:05:06.223+05:30  INFO 56696 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T12:05:06.363+05:30  INFO 56696 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T12:05:07.573+05:30  WARN 56696 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T12:05:09.738+05:30  INFO 56696 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T12:05:09.946+05:30  INFO 56696 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T12:05:09.983+05:30  INFO 56696 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 13.741 seconds (process running for 14.709)
-2026-03-08T12:05:10.707+05:30  INFO 56696 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T12:05:10.709+05:30  INFO 56696 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T12:05:10.714+05:30  INFO 56696 --- [order-service] [RMI TCP Connection(1)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-03-08T12:06:25.961+05:30 DEBUG 56696 --- [order-service] [http-nio-8081-exec-5] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T12:06:26.071+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2026-03-08T12:06:26.162+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T12:06:26.329+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T12:06:26.330+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T12:06:26.331+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772951786325
-2026-03-08T12:06:27.170+05:30  INFO 56696 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: Ky1J-oE1TsW3IDhSWArTYg
-2026-03-08T12:06:27.175+05:30  INFO 56696 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 6 with epoch 0
-2026-03-08T12:06:27.215+05:30  INFO 56696 --- [order-service] [http-nio-8081-exec-5] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : washing machine
-2026-03-08T12:13:18.738+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T12:13:18.745+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T12:13:18.746+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T12:13:18.746+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T12:13:18.746+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T12:13:18.756+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T12:13:18.760+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T12:13:18.764+05:30  INFO 56696 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T18:20:04.914+05:30  INFO 3576 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 3576 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T18:20:04.918+05:30  INFO 3576 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T18:20:06.601+05:30  INFO 3576 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T18:20:06.683+05:30  INFO 3576 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
-2026-03-08T18:20:07.898+05:30  INFO 3576 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T18:20:07.921+05:30  INFO 3576 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T18:20:07.922+05:30  INFO 3576 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T18:20:08.039+05:30  INFO 3576 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T18:20:08.040+05:30  INFO 3576 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3033 ms
-2026-03-08T18:20:08.520+05:30  INFO 3576 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T18:20:08.617+05:30  INFO 3576 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T18:20:08.677+05:30  INFO 3576 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T18:20:09.090+05:30  INFO 3576 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T18:20:09.134+05:30  INFO 3576 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T18:20:09.421+05:30  INFO 3576 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d677be9
-2026-03-08T18:20:09.424+05:30  INFO 3576 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T18:20:10.960+05:30  INFO 3576 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T18:20:11.064+05:30  INFO 3576 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T18:20:11.871+05:30  WARN 3576 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T18:20:13.111+05:30  INFO 3576 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T18:20:13.232+05:30  INFO 3576 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T18:20:13.255+05:30  INFO 3576 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.142 seconds (process running for 10.21)
-2026-03-08T18:20:13.594+05:30  INFO 3576 --- [order-service] [RMI TCP Connection(4)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T18:20:13.596+05:30  INFO 3576 --- [order-service] [RMI TCP Connection(4)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T18:20:13.599+05:30  INFO 3576 --- [order-service] [RMI TCP Connection(4)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-03-08T18:21:49.464+05:30 DEBUG 3576 --- [order-service] [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:21:49.596+05:30  INFO 3576 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2026-03-08T18:21:49.671+05:30  INFO 3576 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T18:21:49.795+05:30  INFO 3576 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T18:21:49.795+05:30  INFO 3576 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T18:21:49.795+05:30  INFO 3576 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772974309792
-2026-03-08T18:21:50.343+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:50.349+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:50.350+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:50.465+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:50.465+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:50.465+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:50.573+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:50.574+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:50.574+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:50.809+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:50.811+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:50.811+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:51.286+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:51.287+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:51.287+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:52.025+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:52.027+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:52.027+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:53.068+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:53.069+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:53.070+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:54.148+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:54.148+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:54.149+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:55.192+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:55.193+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:55.193+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:56.176+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:56.179+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:56.180+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:57.350+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:57.361+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:57.361+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:58.255+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:58.255+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:58.256+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:21:59.361+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:21:59.362+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:21:59.362+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:00.595+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:00.596+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:00.596+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:01.655+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:01.655+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:01.656+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:02.826+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:02.826+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:02.826+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:03.869+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:03.871+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:03.874+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:04.790+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:04.791+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:04.791+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:05.771+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:05.771+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:05.771+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:06.813+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:06.813+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:06.813+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:07.797+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:07.798+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:07.798+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:08.962+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:08.962+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:08.963+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:10.132+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:10.133+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:10.133+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:11.299+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:11.299+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:11.300+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:12.415+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:12.415+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:12.416+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:13.405+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:13.406+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:13.406+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:14.608+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:14.608+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:14.608+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:15.498+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:15.499+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:15.499+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:16.363+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:16.363+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:16.363+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:17.237+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:17.243+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:17.243+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:18.371+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:18.377+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:18.378+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:19.435+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:19.435+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:19.435+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:20.362+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:20.372+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:20.372+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:21.518+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:21.519+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:21.519+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:22.579+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:22.580+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:22.580+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:23.489+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:23.490+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:23.490+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:24.538+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:24.539+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:24.539+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:25.773+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:25.773+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:25.773+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:26.947+05:30  INFO 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:22:26.947+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
-2026-03-08T18:22:26.947+05:30  WARN 3576 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
-2026-03-08T18:22:27.305+05:30  WARN 3576 --- [order-service] [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
-2026-03-08T18:22:27.307+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T18:22:27.311+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T18:22:27.311+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T18:22:27.311+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T18:22:27.312+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T18:22:27.317+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T18:22:27.320+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T18:22:27.323+05:30  INFO 3576 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-08T18:25:48.904+05:30  INFO 23232 --- [order-service] [main] c.p.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 21.0.10 with PID 23232 (C:\Dev\Projects\microservices-project\order-service\target\classes started by kkris in C:\Dev\Projects\microservices-project)
-2026-03-08T18:25:48.907+05:30  INFO 23232 --- [order-service] [main] c.p.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T18:25:50.708+05:30  INFO 23232 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-08T18:25:50.792+05:30  INFO 23232 --- [order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
-2026-03-08T18:25:52.029+05:30  INFO 23232 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-03-08T18:25:52.052+05:30  INFO 23232 --- [order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T18:25:52.052+05:30  INFO 23232 --- [order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-08T18:25:52.191+05:30  INFO 23232 --- [order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-08T18:25:52.192+05:30  INFO 23232 --- [order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3222 ms
-2026-03-08T18:25:52.722+05:30  INFO 23232 --- [order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-08T18:25:52.862+05:30  INFO 23232 --- [order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-08T18:25:52.931+05:30  INFO 23232 --- [order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-08T18:25:53.380+05:30  INFO 23232 --- [order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-08T18:25:53.442+05:30  INFO 23232 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-08T18:25:53.837+05:30  INFO 23232 --- [order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@86bf90b
-2026-03-08T18:25:53.839+05:30  INFO 23232 --- [order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-08T18:25:55.621+05:30  INFO 23232 --- [order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-08T18:25:55.723+05:30  INFO 23232 --- [order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T18:25:56.577+05:30  WARN 23232 --- [order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-08T18:25:57.943+05:30  INFO 23232 --- [order-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-03-08T18:25:58.096+05:30  INFO 23232 --- [order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
-2026-03-08T18:25:58.114+05:30  INFO 23232 --- [order-service] [main] c.p.o.OrderServiceApplication            : Started OrderServiceApplication in 9.965 seconds (process running for 11.266)
-2026-03-08T18:25:58.330+05:30  INFO 23232 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T18:25:58.331+05:30  INFO 23232 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T18:25:58.333+05:30  INFO 23232 --- [order-service] [RMI TCP Connection(3)-172.17.176.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-03-08T18:26:28.555+05:30 DEBUG 23232 --- [order-service] [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:26:28.691+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [localhost:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2026-03-08T18:26:28.763+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2026-03-08T18:26:28.910+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
-2026-03-08T18:26:28.911+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
-2026-03-08T18:26:28.911+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1772974588904
-2026-03-08T18:26:29.682+05:30  INFO 23232 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: Ky1J-oE1TsW3IDhSWArTYg
-2026-03-08T18:26:29.719+05:30  INFO 23232 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1000 with epoch 0
-2026-03-08T18:26:29.743+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-1] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : LG TV
-2026-03-08T18:29:45.086+05:30 DEBUG 23232 --- [order-service] [http-nio-8081-exec-7] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:29:45.095+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-7] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Sony Speakers
-2026-03-08T18:35:29.736+05:30  INFO 23232 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
-2026-03-08T18:42:40.643+05:30 DEBUG 23232 --- [order-service] [http-nio-8081-exec-8] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:42:40.676+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-8] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Headphones
-2026-03-08T18:43:42.504+05:30 DEBUG 23232 --- [order-service] [http-nio-8081-exec-3] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:43:42.513+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-3] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : keyboard
-2026-03-08T18:47:55.307+05:30 DEBUG 23232 --- [order-service] [http-nio-8081-exec-4] org.hibernate.SQL                        : insert into orders (amount,created_at,order_status,product_name,updated_at,version) values (?,?,?,?,?,?)
-2026-03-08T18:47:55.322+05:30  INFO 23232 --- [order-service] [http-nio-8081-exec-4] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Mouse
-2026-03-08T18:48:53.084+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2026-03-08T18:48:53.094+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2026-03-08T18:48:53.094+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2026-03-08T18:48:53.095+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2026-03-08T18:48:53.095+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2026-03-08T18:48:53.119+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-03-08T18:48:53.129+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-03-08T18:48:53.138+05:30  INFO 23232 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-12T12:17:15.181+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2026-03-12T12:17:15.285+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.2
+2026-03-12T12:17:15.286+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: c4deed513057c94e
+2026-03-12T12:17:15.287+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1773298035282
+2026-03-12T12:17:16.204+05:30  INFO 23420 --- [order-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: DmOpNCzQREyQyxZAd1qtBQ
+2026-03-12T12:17:16.210+05:30  INFO 23420 --- [order-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 3 with epoch 0
+2026-03-12T12:17:16.256+05:30  INFO 23420 --- [order-service] [http-nio-8081-exec-7] c.p.o.service.impl.OrderServiceImpl      : Order saved successfully for the Product : Dairy
+2026-03-12T12:24:20.492+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-03-12T12:24:20.506+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-03-12T12:24:20.507+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-03-12T12:24:20.508+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-03-12T12:24:20.509+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2026-03-12T12:24:20.517+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12T12:24:20.520+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-12T12:24:20.523+05:30  INFO 23420 --- [order-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

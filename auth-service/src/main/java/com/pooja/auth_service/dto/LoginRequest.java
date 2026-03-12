@@ -1,11 +1,12 @@
 package com.pooja.auth_service.dto;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-public class RegisterRequest {
+@Getter
+@Setter
+public class LoginRequest {
 
     private String username;
     private String password;
-    private String role;
 }

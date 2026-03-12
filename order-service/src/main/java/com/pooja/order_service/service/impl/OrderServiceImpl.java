@@ -44,7 +44,7 @@ public class OrderServiceImpl implements OrderService {
 
         OrderCreatedEvent orderCreatedEvent = new OrderCreatedEvent(  saved.getId(),
                 saved.getAmount(),
-                saved.getId().toString());
+                saved.getId().toString());//idempotency key
         //Kafka order-created topic call
         orderEventProducer.sendOrderCreatedEvent(orderCreatedEvent);
 
