@@ -28,10 +28,13 @@ public class AuthService {
 
     public void register(RegisterRequest request)
     {
+        if(userRepository.existsByUsername(request.getUsername())) {
+            throw new RuntimeException("Username already exists");
+        }
     Users user= new Users();
     user.setUsername(request.getUsername());
     user.setPassword(passwordEncoder.encode(request.getPassword()));
-    user.setRole(Role.ROLE_USER);
+    user.setRole(Role.valueOf(request.getRole()));
 
 
     userRepository.save(user);

@@ -21,6 +21,6 @@ public class PaymentRequest {
     @NotNull(message="amount should not be null")
     @Positive(message="Amount Should be positive")
     private Double amount;
-     @NotBlank(message="idempotencykey should not be empty or null or blank spaces")
+   //  @NotBlank(message="idempotencykey should not be empty or null or blank spaces")
     private String idempotencyKey;
 }

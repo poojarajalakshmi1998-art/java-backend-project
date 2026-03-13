@@ -103,4 +103,11 @@ public class PaymentServiceImpl implements PaymentService {
         return PaymentMapper.toresponse(updated);
 
     }
+    @Override
+    public String gettransactionid(Long orderid){
+       Payment payment= paymentRepo.
+               findByOrderId(orderid).
+               orElseThrow(()-> new RuntimeException("Payment not found"));
+return payment.getGatewayTransactionId();
+    }
 }

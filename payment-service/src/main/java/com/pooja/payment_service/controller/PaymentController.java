@@ -7,10 +7,7 @@ import com.pooja.payment_service.service.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/payments")
@@ -23,5 +20,11 @@ private final PaymentService paymentService;
 
         // paymentRequest.setPaymentmethod(PaymentMethod.UPI);
        return ResponseEntity.ok().body(paymentService.createpayment(paymentRequest));
+ }
+
+ @GetMapping("transactionid/{orderid}")
+    public ResponseEntity<String> getTransactionId(@PathVariable("orderid") Long orderid){
+
+     return ResponseEntity.ok().body( paymentService.gettransactionid(orderid));
  }
 }

@@ -97,6 +97,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>notification-service</finalName>
 	</build>
 
 </project>

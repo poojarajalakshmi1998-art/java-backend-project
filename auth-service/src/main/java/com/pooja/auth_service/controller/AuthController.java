@@ -11,6 +11,7 @@ import com.pooja.auth_service.repository.UserRepository;
 import com.pooja.auth_service.security.JwtUtil;
 import com.pooja.auth_service.service.AuthService;
 import com.pooja.auth_service.service.RefreshTokenService;
+import jakarta.validation.Valid;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -41,7 +42,7 @@ public class AuthController {
         this.refreshTokenRepository = refreshTokenRepository;
     }
     @PostMapping("/register")
-    public ResponseEntity<?> register(@RequestBody RegisterRequest registerRequest) {
+    public ResponseEntity<?> register(@Valid @RequestBody RegisterRequest registerRequest) {
         authService.register(registerRequest);
         return ResponseEntity.ok("User registered successfully");
 
