@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
+import java.util.Optional;
 import java.util.UUID;
 @Service
 public class RefreshTokenService {
@@ -25,7 +26,18 @@ private static final long RefreshTokenDuration= 7 * 24 * 60 * 60 * 1000;
     public RefreshToken createRefreshToken(String username)
     {
 
+
+
         Users user =userRepository.findByUsername(username).orElseThrow(()-> new InvalidUserNameException("User Name Not found"));
+        Optional<RefreshToken> existingToken =
+                refreshTokenRepository.findByUser(user);
+
+        if (existingToken.isPresent()) {
+            RefreshToken token = existingToken.get();
+            token.setRefreshToken(UUID.randomUUID().toString());
+            token.setExpiryDate(Instant.now().plusMillis(RefreshTokenDuration));
+            return refreshTokenRepository.save(token);
+        }
         RefreshToken refreshToken = new RefreshToken();
 
         refreshToken.setUser(user);
@@ -35,6 +47,7 @@ private static final long RefreshTokenDuration= 7 * 24 * 60 * 60 * 1000;
 
 
     }
+
 
     public RefreshToken verifyexpiration  (RefreshToken refreshToken)
     {

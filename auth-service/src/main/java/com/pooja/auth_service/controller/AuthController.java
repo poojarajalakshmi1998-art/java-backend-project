@@ -52,6 +52,10 @@ public class AuthController {
     @PostMapping("/login")
     public AuthResponse login(@RequestBody LoginRequest loginRequest) {
 //the below line will call UserDetailsService and also will encode password using passwordencoder.matches(PasswordfromReqest,PasswordinDB) and will get username and roles from Db
+
+        System.out.println("USERNAME: " + loginRequest.getUsername());
+        System.out.println("PASSWORD: " + loginRequest.getPassword());
+
         Authentication authentication =
                 authenticationManager.authenticate(
                         new UsernamePasswordAuthenticationToken(
@@ -77,7 +81,7 @@ public class AuthController {
 
 
     }
-@GetMapping("/refresh")
+@PostMapping("/refresh")
     public AuthResponse refreshToken(@RequestBody RefreshTokenRequest request)
 {
 

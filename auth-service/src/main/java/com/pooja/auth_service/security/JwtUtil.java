@@ -20,7 +20,7 @@ public class JwtUtil {
                 setIssuedAt(new Date()).
               setExpiration(new Date(System.currentTimeMillis() +
                       //86400000 -- for 24hrs
-                      15*60*1000 //---for 1 mins
+                      15*60*1000 //---for 15 mins
 
               )).claim("role",role)
               .signWith(Keys.hmacShaKeyFor(secret_key.getBytes()), SignatureAlgorithm.HS256).compact();

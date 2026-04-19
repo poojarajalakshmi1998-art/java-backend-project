@@ -26,6 +26,14 @@ private JwtUtil jwtutil;
 
     {
 
+        String path = request.getRequestURI();
+
+
+        if (path.startsWith("/auth")) {
+            filterchain.doFilter(request, response);
+            return;
+        }
+
 String authHeader=request.getHeader("Authorization");
 if(authHeader== null || !authHeader.startsWith("Bearer "))
 {
