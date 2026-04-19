@@ -20,6 +20,25 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build with Maven
-        run: mvn clean install
-        working-directory: java-backend-project
+      - name: Build Auth Service
+        run: mvn clean install -DskipTests
+        working-directory: auth-service
+
+      - name: Build Order Service
+        run: mvn clean install -DskipTests
+        working-directory: order-service
+
+      - name: Build Payment Service
+        run: mvn clean install -DskipTests
+        working-directory: payment-service
+
+      - name: Build Notification Service
+        run: mvn clean install -DskipTests
+        working-directory: notification-service
+
+      - name: Build API Gateway
+        run: mvn clean install -DskipTests
+        working-directory: api-gateway
+      - name: Build Common Events
+        run: mvn clean install -DskipTests
+        working-directory: common-events
