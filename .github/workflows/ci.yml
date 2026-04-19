@@ -20,9 +20,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Build API Gateway
+        run: mvn clean install -DskipTests
+        working-directory: api-gateway
+
       - name: Build Auth Service
         run: mvn clean install -DskipTests
         working-directory: auth-service
+        
+      - name: Build Common Events
+        run: mvn clean install -DskipTests
+        working-directory: common-events
 
       - name: Build Order Service
         run: mvn clean install -DskipTests
@@ -36,9 +44,5 @@ jobs:
         run: mvn clean install -DskipTests
         working-directory: notification-service
 
-      - name: Build API Gateway
-        run: mvn clean install -DskipTests
-        working-directory: api-gateway
-      - name: Build Common Events
-        run: mvn clean install -DskipTests
-        working-directory: common-events
+
+
