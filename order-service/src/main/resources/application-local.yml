@@ -3,8 +3,8 @@ spring:
     name : order-service
   datasource:
     url: jdbc:postgresql://localhost:5432/orderdb
-    username: postgres
-    password: KrishPooja@0703
+    username: ${DB_PASSWORD}
+    password: ${DB_USERNAME}
 
   jpa:
     hibernate:
