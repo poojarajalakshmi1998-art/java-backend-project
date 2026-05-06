@@ -1,3 +1,5 @@
+/*
+
 package com.pooja.payment_service.config;
 
 
@@ -22,3 +24,4 @@ public class CorsConfig {
         };
     }
 }
+*/

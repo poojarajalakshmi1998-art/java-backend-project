@@ -7,6 +7,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,5 +45,26 @@ return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
 
         return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
 
+    }
+
+    @ExceptionHandler(PaymentException.class)
+    public ResponseEntity<Map<String, Object>> handlePaymentException(PaymentException ex) {
+
+        Map<String, Object> error = new HashMap<>();
+        error.put("message", ex.getMessage());
+        error.put("status", HttpStatus.BAD_REQUEST.value());
+        error.put("timestamp", LocalDateTime.now());
+
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
+
+        Map<String, Object> error = new HashMap<>();
+        error.put("message", "Something went wrong");
+        error.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
+
+        return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

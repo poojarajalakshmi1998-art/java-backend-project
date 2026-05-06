@@ -36,7 +36,7 @@ server:
   port : 8082
 logging:
   file:
-    name: Order-service_application.log
+    name: Payment-service_application.log
   level:
     org:
       hibernate:

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IDE files
 .idea/
 *.iml
@@ -8,7 +9,26 @@
 
 # Build folders
 target/
+=======
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+>>>>>>> 711c9d6 (Updated microservices changes)
 
 # OS files
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
+=======
+
+# IntelliJ
+.idea
+*.iml
+
+# Target folders
+target/
+>>>>>>> 711c9d6 (Updated microservices changes)

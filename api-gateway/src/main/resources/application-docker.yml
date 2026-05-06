@@ -16,7 +16,7 @@ spring:
             - id: order-service
               uri: http://order-service:8081
               predicates:
-                - Path=/orders/**
+                - Path=/order/**
 
             - id: payment-service
               uri: http://payment-service:8082
@@ -25,3 +25,5 @@ spring:
 
 server:
   port: 8085
+jwt:
+  secret: ${JWT_SECRET}

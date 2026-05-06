@@ -6,6 +6,7 @@ import com.pooja.payment_service.dto.PaymentStatusUpdateRequest;
 import com.pooja.payment_service.entity.Payment;
 import com.pooja.payment_service.enums.PaymentStatus;
 import com.pooja.payment_service.exception.InvalidPaymentStatusException;
+import com.pooja.payment_service.exception.PaymentException;
 import com.pooja.payment_service.fraud.FraudDetectionService;
 import com.pooja.payment_service.gateway.PaymentGateway;
 import com.pooja.payment_service.gateway.RazorpayGateway;
@@ -58,13 +59,13 @@ public class PaymentServiceImpl implements PaymentService {
 
         if(checkexistingsuccesspayment.isPresent())
         {
-            throw new RuntimeException("Payment already completed for this order");
+            throw new PaymentException("Payment already completed for this order");
         }
        Payment payment = PaymentMapper.toentity(paymentrequest);
          //fraud detection check
         if(fraudDetectionService.isfradulent(payment.getAmount()))
         {
-            throw new RuntimeException("Fradulent payment detected");
+            throw new PaymentException("Fraudulent payment detected");
         }
         payment.setPaymentStatus(PaymentStatus.INITIATED);
          paymentRepo.save(payment);

@@ -21,6 +21,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Instant;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
@@ -44,13 +45,24 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody RegisterRequest registerRequest) {
         authService.register(registerRequest);
-        return ResponseEntity.ok("User registered successfully");
+        //return ResponseEntity.ok("User registered successfully");
+        return ResponseEntity.ok(Map.of("message", "User registered successfully"));
 
 
     }
 
     @PostMapping("/login")
     public AuthResponse login(@RequestBody LoginRequest loginRequest) {
+        /*1. Controller receives login request
+2. AuthenticationManager.authenticate()
+3. DaoAuthenticationProvider used
+4. loadUserByUsername() called
+5. DB user fetched
+6. PasswordEncoder.matches() executed
+7. If valid → Authentication object created
+8. Principal extracted
+9. JWT + Refresh token generated
+10. Response returned*/
 //the below line will call UserDetailsService and also will encode password using passwordencoder.matches(PasswordfromReqest,PasswordinDB) and will get username and roles from Db
 
         System.out.println("USERNAME: " + loginRequest.getUsername());

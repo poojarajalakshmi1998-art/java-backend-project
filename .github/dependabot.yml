@@ -28,4 +28,8 @@ updates:
   - package-ecosystem: "maven"
     directory: "/common-events"
     schedule:
+<<<<<<< HEAD
       interval: "daily"
+=======
+      interval: "daily"
+>>>>>>> 711c9d6 (Updated microservices changes)

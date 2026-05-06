@@ -1,23 +1,26 @@
 package com.pooja.api_gateway.util;
 
 import io.jsonwebtoken.Jwts;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class JwtUtil {
 
-    private static final String secret_key="mysecretkeymysecretkeymysecretkey";
+    @Value("${jwt.secret}")
+    private String secretKey;
+
 
     public String extractUsername(String token){
 
         return Jwts.parser().
-                setSigningKey(secret_key.getBytes()).
+                setSigningKey(secretKey.getBytes()).
                 build().parseClaimsJws(token).getBody().getSubject();
     }
     public boolean validateToken(String token){
 
         try {
-            Jwts.parser().setSigningKey(secret_key.getBytes()).build().parseClaimsJws(token);
+            Jwts.parser().setSigningKey(secretKey.getBytes()).build().parseClaimsJws(token);
             return true;
         }
         catch(Exception e){
